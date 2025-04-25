@@ -1,11 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+:root {
+    --primary-color: #f5cf06;
+    --secondary-color: #8e4106;
+    --default-padding: 0px 70px;
+}
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: "Righteous", sans-serif;
 }
 
 ol,
 ul,
 li {
     list-style: none;
+}
+
+body {
+    background-color: var(--primary-color);
+    display: grid;
+    grid-template-rows: 124px 1fr 100px;
+    height: 100vh;
+}
+
+header {
+    display: flex;
+    padding: var(--default-padding);
+    align-items: flex-end;
+    font-size: large;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+    color: #8e4106;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fafafa;
+}
+
+.pikachu-background {
+    position: absolute;
+    width: 100%;
+    margin: auto;
+    top: 70px;
+    padding: var(--default-padding);
+    z-index: -1;
+    border: #8e4106 solid 1px;
+}
+
+.pikachu-background img {
+    width: 100%;
+}
+
+.pikachu-img {
+    position: absolute;
+    border: #8e4106 solid 1px;
+    left: 450px;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.pikachu-img img {
+    width: 570;
+    height: 590px;
+}
+
+.description {
+    position: absolute;
+    left: 5%;
+    top: 70%;
+    width: 800px;
+    font-size: 50px;
+}
+
+.description p {
+    width: 100%;
+    font-size: 20px;
+    border: #8e4106 solid 1px;
+    color: var(--secondary-color);
+}
+
+.description h2 {
+    width: 100%;
+    border: #8e4106 solid 1px;
+    color: var(--secondary-color);
+}
+
+footer {
+    background-color: blue;
 }
